@@ -1,0 +1,15 @@
+Para testar o Programa, deve ter um Banco de Dados em seu PC
+
+PARA CONFIGURAR O BANCO DE DADOS BASTA IR NO ARQUIVO "orm.py" e modificar as seguintes configurações:
+
+USERS = "root"  #Colocar seu Usuario de Acesso ao Banco de Dados
+PASSWORD = "" #Colocar sua Senha de Acesso ao Banco de Dados
+HOST = "localhost" #Endereço/Ip onde está localizado seu Banco de Dados
+BANK = "projetologin" #Escolher o Banco de Dados (Crie um Próprio para esse programa)
+PORT = "3306" #Porta onde está localizado o Banco de Dados
+
+CONNECT = f"mysql+pymysql://{USERS}:{PASSWORD}@{HOST}:{PORT}/{BANK}" #String de conexão
+
+#Caso o Banco de Dados seja diferente do MySQL, basta colocar o nome do banco de dados na String de conexão
+
+------ Feito essas configurações Básicas, Basta iniciar o Arquivo orm.py apenas uma vez -------
